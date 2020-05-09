@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Node JS Quiz</title>
+<link  rel="stylesheet" href="styles.css">
+</head>
+
+<body id="home">
+    <h1>Node JS Quiz</h1>
+    <h3 id="score" style="float: right;">Score: 0/5</h3>
+    <form>
+        <div class="mySlides" id="qOne">
+            <h3>1 / 5:</h3>
+            <p>Node.js is a Javascript engine (Google's V8 engine for Chrome, written in C++) that allows to run Javascript outside the browser? </p>
+            <label class="radiocontainer" id="label2">No<input type="radio" name="quiz" id="2" onclick="clickRadio(qOne,2)" value="2"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label1">Yes<input type="radio" name="quiz" id="1" onclick="clickRadio(qOne,1)" value="1"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label3"> Indifferent<input type="radio" name="quiz" id="3" onclick="clickRadio(qOne,3)" value="3"><span class="checkmark"></span></label>
+        </div>
+        <div class="mySlides" id="qTwo">
+            <h3>2 \ 5:</h3>
+            <p>Is the http module a core module in Node.js's source, that does not require installing additional resources?</p>
+            <label class="radiocontainer" id="label2">It needs additional packages<input type="radio" name="quiz" id="2" onclick="clickRadio(qTwo,2)" value="2"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label1"> No<input type="radio" name="quiz" id="1" onclick="clickRadio(qTwo,1)" value="1"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label3">Yes<input type="radio" name="quiz" id="3" onclick="clickRadio(qTwo,3)" value="3"><span class="checkmark"></span></label>
+        </div>
+        <div class="mySlides" id="qThree">
+            <h3>3 / 5:</h3>
+            <p>Routes that requires authentication and implement token-based authentication cane be done with which of the following?</p>
+            <label class="radiocontainer" id="label2">Express<input type="radio" name="quiz" id="2" onclick="clickRadio(qThree,2)" value="2"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label1">JSON Web Token (JWT)<input type="radio" name="quiz" id="1" onclick="clickRadio(qThree,1)" value="1"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label3">Mongoose<input type="radio" name="quiz" id="3" onclick="clickRadio(qThree,3)" value="3"><span class="checkmark"></span></label>
+        </div>
+        <div class="mySlides" id="qFour">
+            <h3> 4 / 5:</h3>
+            <p>What is a REPL?</p>
+            <label class="radiocontainer" id="label2"> Read-Eval-Print-Loop<input type="radio" name="quiz" id="2" onclick="clickRadio(qFour,2)" value="2"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label1">Real-Eval-Print-Lot<input type="radio" name="quiz" id="1" onclick="clickRadio(qFour,1)" value="1"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label3">Rom-Eval-Print-Loop<input type="radio" name="quiz" id="3" onclick="clickRadio(qFour,3)" value="3"><span class="checkmark"></span></label>
+        </div>
+        <div class="mySlides" id="qFive">
+            <h3> 5 / 5:</h3>
+            <p>What is the API in full?</p>
+            <label class="radiocontainer" id="label2">Application Program Interface<input type="radio" name="quiz" id="2" onclick="clickRadio(qFive,2)" value="2"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label1">Application Program Interface<input type="radio" name="quiz" id="1" onclick="clickRadio(qFive,1)" value="1"><span class="checkmark"></span></label>
+            <label class="radiocontainer" id="label3">Application Program Interface<input type="radio" name="quiz" id="3" onclick="clickRadio(qFive,3)" value="3"><span class="checkmark"></span></label>
+        </div>
+        <br>
+        <a class="button" onclick="plusSlides()">Next ❯</a>
+        <a class="button" onclick="submit()" style="display: none;">Submit ❯</a>
+        <br><br>
+    </form>
+    <h1 id="results" style="text-align: center;"></h1>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+
+body {
+	text-align:center;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	background: #e1d8b9 url(/page_background.jpg) repeat-x;
+	margin-top: 25px;
+}
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 62px;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align:left;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align:left;
+}
+
+div {
+    font-size: 120%;
+    line-height: 1.7em;
+}
+
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    padding: 12px 30px !important;
+    font-size: 17px;
+    color: white;
+    border-style: none;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.radiocontainer {
+    background-color: #f1f1f1;
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    word-wrap: break-word;
+}
+
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 19px;
+    width: 19px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.checkedlabel {
+    background-color: #ddd;
+}
+
+.radiocontainer:hover {
+    background-color: #ddd;
+}
+
+.radiocontainer input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radiocontainer input:checked~.checkmark:after {
+    display: block;
+}
+
+.radiocontainer .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+.mySlides {
+    display: none;
+}
